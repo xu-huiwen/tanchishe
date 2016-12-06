@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+}
+img{
+	border: 0;
+}
+body{
+	background: url(img/bg.jpg);
+	overflow: hidden;
+
+}
+.box{
+	width: 500px;
+	height: 500px;
+	border-left: 3px solid #EDEDED;
+	border-top: 3px solid #EDEDED;
+	border-right: 2px solid #EDEDED;
+	border-bottom: 2px solid #EDEDED;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right:0;
+	bottom: 0;
+	margin: auto;
+}
+.box .block{
+	width: 24px;
+	height: 24px;
+	float: left;
+	border-bottom: 1px solid #EDEDED;
+	border-right: 1px solid #EDEDED;
+}
+.box .snake{
+	background-image:url(img/2.png);
+	background-size: cover;
+}
+.box .food{
+	background-image:url(img/1.jpg);
+	background-size: cover;
+}
+.tishi{
+	width: 200px;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: #000;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin: auto;
+	z-index: 100;
+	transition: transform 0.6s ease;
+	transform: translateY(-1000px);
+}
+.tishi.show{
+	transform: translateY(0);
+}
+.zailai,.kaishi,.zanting,.defen div,.defen span{
+	display: block;
+	width: 120px;
+	height:50px;
+	background: rgba(36,41,41,0.7);
+	font-size: 18px;
+	color:#fff;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	z-index: 1000;
+	position: fixed;
+	right: 18%;
+}
+.defen div{
+	top:30%;
+}
+.defen span{
+	top: 40%;
+}
+.zailai{
+	top:50%;
+}
+.kaishi{
+	top:60%;
+}
+.zanting{
+	top:70%;
+}
+.kaishi:hover,.zanting:hover,.zailai:hover{
+	background: red;
+}
+
